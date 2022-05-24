@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <title>Системный Блок</title>
+    <link rel="shortcut icon" href="./img/logooo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section class="top-nav">
+            <a class="logo_header" href="../index.html"></a>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li class="main_page"><a href="../index.html">Главная страница</a></li>
+                <li class="inner" onmouseenter="openInnerSubMenu()"><a href="../Внутренняя арх/index.html">Внутренняя
+                        архитектура</a>
+                </li>
+                <li class="outer" onmouseenter="openOuterSubMenu()"><a href="../Внешняя арх/index.html">Внешняя
+                        архитектура</a>
+                </li>
+                <li class="games" onmouseenter="openGamesSubMenu()"><a href="../Переход на игры/index.html">Игры</a>
+                </li>
+            </ul>
+        </section>
+        <ul class="submenu submenu1" id="sm1" onmouseleave="closeInnerSubMenu()">
+            <li><a href="../Оперативная память/index.html">Оперативная память</a></li>
+            <li><a href="../Материнская плата/index.html">Материнская плата</a></li>
+            <li><a href="../Видеокарта/index.html">Видеокарта</a></li>
+            <li><a href="../Процессор/index.html">Процессор</a></li>
+            <li><a href="../Жесткий диск/index.html">Винчестер</a></li>
+            <li><a href="../Блок питания/index.html">Блок питания</a></li>
+        </ul>
+        <ul class="submenu submenu2" id="sm2" onmouseleave="closeGamesSubMenu()">
+            <li><a href="../Игра о внутренней/index.html">Игра о внутренней архитектуре</a></li>
+            <li><a href="../Игра о внешней/index.html">Игра о внешней архитектуре</a></li>
+        </ul>
+        <ul class="submenu submenu3" id="sm3" onmouseleave="closeOuterSubMenu()">
+            <li><a href="../Монитор/index.html">Монитор</a></li>
+            <li><a href="../Клавиатура/index.html">Клавиатура</a></li>
+            <li><a href="../Мышь/index.html">Мышь</a></li>
+            <li><a href="#">Системный блок</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="block1">
+            <div class="slaider">
+                <div class="slaider_text">Системный блок</div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/Слайдер1.jpg" />
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="img/Слайдер2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Слайдер3.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Слайдер4.jpg" />
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="img/Слайдер5.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Слайдер6.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Слайдер7.jpg" />
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="block2">
+            <div class="block2_text">
+                <div class="block2_descripton" onclick="menu1_zoom()">
+                    <p class="h1">Описание</p>
+                </div>
+                <div class="block2_chatacteristics" onclick="menu2_zoom()">
+                    <p class="h2">Характеристики</p>
+                </div>
+                <div class="block2_models" onclick="menu3_zoom()">
+                    <p class="h3">Популярные модели</p>
+                </div>
+            </div>
+            <div class="menues">
+                <div class="menu1">
+                    <div class="menu1_container">
+                        <div class="menu1_image"></div>
+                        <div class="menu1_text">
+                            <span>Системный блок — функциональный элемент, защищающий внутренние компоненты компьютера
+                                от внешнего воздействия и механических повреждений, поддерживающий необходимый
+                                температурный режим внутри, экранирующий создаваемые внутренними компонентами
+                                электромагнитное излучение и являющийся основой для дальнейшего расширения системы.
+                                <br><br>
+                                Содержимое системного блока в значительной степени зависит от вычислительной системы в
+                                целом, её задач, целей и форм-фактора. В случае рационального использования, системный
+                                блок в большей степени соответствует потребностям вычислительной системы. В зависимости
+                                от вычислительной системы, в системном блоке могут находиться различные компоненты
+                                аппаратного обеспечения</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu2">
+                    <div class="column">
+                        <div class="offer">
+                            <div class="icon1"></div>
+                            <div class="text">
+                                <div class="text_title">Процессор</div>
+                            </div>
+                        </div>
+                        <div class="offer">
+                            <div class="icon2"></div>
+                            <div class="text">
+                                <div class="text_title">Видеокарта</div>
+                            </div>
+                        </div>
+                        <div class="offer">
+                            <div class="icon3"></div>
+                            <div class="text">
+                                <div class="text_title">Материнская плата</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="offer">
+                            <div class="icon4"></div>
+                            <div class="text">
+                                <div class="text_title">Оперативная память</div>
+                            </div>
+                        </div>
+                        <div class="offer">
+                            <div class="icon5"></div>
+                            <div class="text">
+                                <div class="text_title">Жесткий диск</div>
+                            </div>
+                        </div>
+                        <div class="offer">
+                            <div class="icon6"></div>
+                            <div class="text">
+                                <div class="text_title">Блок питания</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="menu3">
+                    <div class="cards">
+                        <div class="card">
+                            <div class="card_image1"></div>
+                            <div class="card_text">
+                                <div class="card_title"><span>Jet Gamer</span></div>
+                                <div class="card_subtitle"><span>игровой (геймерский), CPU Intel Core i5 10400F 2900
+                                        МГц, RAM DDR4 16 ГБ, SSD 240 ГБ, графика: NVIDIA GeForce GTX 1050 Ti 4 ГБ, БП
+                                        500 Вт, без ОС</span></div>
+                                <div class="card_cost"><span>2501 BYN</span></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_image2"></div>
+                            <div class="card_text">
+                                <div class="card_title"><span>MultiGame</span></div>
+                                <div class="card_subtitle"><span>CPU Intel Core i5 10600KF 4100 МГц, RAM DDR4 16 ГБ, SSD
+                                        240 ГБ, графика: NVIDIA GeForce GTX 1660 Super 6 ГБ, БП 750 Вт, Windows 10
+                                        Pro</span></div>
+                                <div class="card_cost"><span>2999 BYN</span></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_image3"></div>
+                            <div class="card_text">
+                                <div class="card_title"><span>MultiGame</span></div>
+                                <div class="card_subtitle"><span>игровой (геймерский)/домашний, CPU AMD Ryzen 5 3600
+                                        3600 МГц, RAM DDR4 16 ГБ, HDD 1000 ГБ, графика: NVIDIA GeForce RTX 3050 8 ГБ, БП
+                                        600 Вт, без ОС</span></div>
+                                <div class="card_cost"><span>3838 BYN</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logo_footer">desPCription</div>
+        <div class="seti">
+            <div class="text_network">Ищите нас в соцсетях:</div>
+            <a href="https://e.mail.ru/inbox/?app_id_mytracker=undefined&authid=l3bwmdfa.tlc&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1"
+                class="mail"></a>
+            <a href="https://vk.com/public213309363" class="vk"></a>
+            <a href="https://instagram.com/despcription?igshid=YmMyMTA2M2Y=" class="insta"></a>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

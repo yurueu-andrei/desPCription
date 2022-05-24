@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Главная</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="./script/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <link rel="shortcut icon" href="./img/логотип.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section class="top-nav">
+            <a class="logo_header" href="#"></a>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li class="main_page"><a href="index.html">Главная страница</a></li>
+                <li class="inner" onmouseenter="openInnerSubMenu()"><a href="./Внутренняя арх/index.html">Внутренняя
+                        архитектура</a>
+                </li>
+                <li class="outer" onmouseenter="openOuterSubMenu()"><a href="./Внешняя арх/index.html">Внешняя
+                        архитектура</a>
+                </li>
+                <li class="games" onmouseenter="openGamesSubMenu()"><a href="./Переход на игры/index.html">Игры</a>
+                </li>
+            </ul>
+        </section>
+        <ul class="submenu submenu1" id="sm1" onmouseleave="closeInnerSubMenu()">
+            <li><a href="./Оперативная память/index.html">Оперативная память</a></li>
+            <li><a href="./Материнская плата/index.html">Материнская плата</a></li>
+            <li><a href="./Видеокарта/index.html">Видеокарта</a></li>
+            <li><a href="./Процессор/index.html">Процессор</a></li>
+            <li><a href="./Жесткий диск/index.html">Винчестер</a></li>
+            <li><a href="./Блок питания/index.html">Блок питания</a></li>
+        </ul>
+        <ul class="submenu submenu2" id="sm2" onmouseleave="closeGamesSubMenu()">
+            <li><a href="./Игра о внутренней/index.html">Игра о внутренней архитектуре</a></li>
+            <li><a href="./Игра о внешней/index.html">Игра о внешней архитектуре</a></li>
+        </ul>
+        <ul class="submenu submenu3" id="sm3" onmouseleave="closeOuterSubMenu()">
+            <li><a href="./Монитор/index.html">Монитор</a></li>
+            <li><a href="./Клавиатура/index.html">Клавиатура</a></li>
+            <li><a href="./Мышь/index.html">Мышь</a></li>
+            <li><a href="./Системный блок/index.html">Системный блок</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="block1">
+            <div class="block1_text">
+                <p class="structure_1">
+                    Всё о строении <br> компьютера
+                </p>
+                <p class="structure_2">
+                    Узнай, как устроен компьютер <br> снаружи и изнутри
+                </p>
+                <p class="quote">
+                    "Компьютер делает не то, что вы <br> хотите, а то что ему приказываете." <br>Дональд Кнут
+                </p>
+            </div>
+            <div class="block1_body animate__animated animate__fadeInTopRight"></div>
+        </div>
+        <div class="block2">
+            <div class="image_black wow animate__animated animate__fadeInLeft">
+                <div class="img1"></div>
+            </div>
+            <div class="cards">
+                <div class="card1">
+                    <a href="./Внешняя арх/index.html" class="img2"></a>
+                    <div class="outside_text">
+                        <p>Внешняя архитектура</p>
+                    </div>
+                </div>
+                <div class="card2">
+                    <a href="./Внутренняя арх/index.html" class="img3"></a>
+                    <div class="outside_text">
+                        <p>Внутренняя архитектура</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logo_footer">desPCription</div>
+        <div class="seti">
+            <div class="text_network">Ищите нас в соцсетях:</div>
+            <a href="https://e.mail.ru/inbox/?app_id_mytracker=undefined&authid=l3bwmdfa.tlc&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1"
+                class="mail"></a>
+            <a href="https://vk.com/public213309363" class="vk"></a>
+            <a href="https://instagram.com/despcription?igshid=YmMyMTA2M2Y=" class="insta"></a>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

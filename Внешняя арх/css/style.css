@@ -1,0 +1,1047 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lato&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+а html,
+body {
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: #C9C9C9;
+}
+
+a:hover {
+    text-decoration: underline;
+    border-bottom: 7px;
+    color: #C9C9C9;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: 'Hind Siliguri';
+    src: url(/fonts/HindSiliguriLight.ttf);
+}
+
+@font-face {
+    font-family: 'Bitter';
+    src: url(/fonts/Bitter.ttf);
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url(/fonts/Nunito-ExtraLight.ttf);
+}
+
+header {
+    z-index: 10000;
+    background-image: url(../img/Rectangle\ 4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo_header {
+    background-image: url(../img/logo_new.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 60%;
+    height: 40px;
+}
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-size: 100%;
+    color: #fff;
+    height: 50px;
+    padding: 35px 8%;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 15px;
+    line-height: 15px;
+    z-index: 1000;
+
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 10px 0 10px 0;
+    line-height: 20px;
+}
+
+.submenu a {
+    z-index: 10000;
+    text-decoration: none;
+}
+
+.menu>li {
+    padding: 0 1rem;
+    position: relative;
+}
+
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+}
+
+.menu-button::before {
+    content: "";
+    margin-top: -8px;
+}
+
+.menu-button::after {
+    content: "";
+    margin-top: 8px;
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+}
+
+@media (max-width: 769px) {
+    .menu-button-container {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu-toggle~.menu li {
+        height: 20px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        visibility: hidden;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #menu-toggle:checked~.menu li {
+        visibility: visible;
+        border: 1px solid #333;
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .menu>li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: white;
+        background-color: #222;
+    }
+
+    .menu>li:not(:last-child) {
+        border-bottom: 1px solid #444;
+    }
+
+    #sm1,
+    #sm2,
+    #sm3 {
+        display: none;
+    }
+
+    .menu {
+        margin-top: 9%;
+    }
+}
+
+.inner,
+.outer,
+.games,
+.main_page {
+    display: flex;
+    justify-content: center;
+    font-family: 'Nunito';
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.inner:hover,
+.outer:hover,
+.games:hover,
+.main_page:hover {
+    border-bottom: 4px solid white;
+    border-radius: 3px 3px 0px 0px;
+}
+
+.submenu {
+    z-index: 100;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 0px;
+    font-size: 22px;
+    letter-spacing: 0.1em;
+    background-image: url(../img/header_new.png);
+    transition: all 1s;
+    padding: 20px 170px;
+    visibility: hidden;
+}
+
+.submenu li:hover {
+    border-bottom: 1px solid rgb(255, 255, 255);
+    color: #e3dddd;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: url(../img/Фон\ главной.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 60px 0px;
+    height: 83vh;
+}
+
+.block {
+    margin: 0;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.frame {
+    margin-top: 25px;
+    width: 643px;
+    height: 622px;
+}
+
+.screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 100;
+    top: 10%;
+    width: 600px;
+    height: 500px;
+}
+
+.keyboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 20%;
+    bottom: 25%;
+    left: 10%;
+    width: 400px;
+    height: 300px;
+}
+
+.mouse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 100%;
+    bottom: 12%;
+    width: 200px;
+    height: 100px;
+}
+
+.system_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    bottom: 135%;
+    left: 45%;
+    z-index: 1;
+    width: 600px;
+    height: 700px;
+}
+
+.screen img {
+    width: 80%;
+    height: 80%;
+}
+
+.mouse img {
+    width: 70%;
+    height: 80%;
+}
+
+.system_block img {
+    width: 80%;
+    height: 80%;
+}
+
+.keyboard img {
+    width: 80%;
+    height: 80%;
+}
+
+
+.list {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-direction: column;
+
+}
+
+.list ul {
+    display: flex;
+    justify-content: center;
+    gap: 67px;
+    flex-direction: column;
+}
+
+.list li a {
+    color: #4E4D4D;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: calc(22px + 16 * (100vh / 1920));
+}
+
+.list li a:hover {
+    color: black;
+}
+
+
+.game_ad {
+    margin-right: 20%;
+    display: flex;
+    justify-content: right;
+    gap: 50px;
+}
+
+.game_img {
+    background: url('../img/game.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 25%;
+}
+
+.game_img:hover {
+    background: url('../img/game-controller.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.game_img img {
+    width: 100%;
+}
+
+.game_text {
+    color: white;
+    font-size: 24px;
+    line-height: 50px;
+    font-family: 'Inter', sans-serif;
+}
+
+.list a {
+    text-decoration: none;
+    color: white;
+    opacity: 1;
+}
+
+.list a:hover {
+    color: black;
+}
+
+.footer {
+    display: flex;
+    background-image: url(../img/Rectangle\ 4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    height: 13vh;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo_footer {
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 17px;
+    color: rgba(255, 255, 255, 0.8);
+    padding-top: 0px;
+}
+
+.seti {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.text_network {
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #C9C9C9;
+}
+
+.mail {
+    background-image: url(../img/mail.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30%;
+    height: 55px;
+}
+
+.vk {
+    background-image: url(../img/vk.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30%;
+    height: 55px;
+}
+
+.insta {
+    background-image: url(../img/insta.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30%;
+    height: 45px;
+}
+
+@media(max-width:1700px) {
+
+    .frame {
+        width: 400px;
+    }
+
+    .system_block {
+        bottom: 80%;
+    }
+
+    .keyboard {
+        bottom: 35%;
+    }
+
+    .keyboard img {
+        width: 80%;
+        height: 100%;
+    }
+
+    .screen {
+        top: 8%;
+        width: 600px;
+        height: 500px;
+    }
+
+    .system_block {
+        bottom: 180%;
+        left: 70%;
+    }
+
+    .mouse {
+        left: 150%;
+        bottom: 10%;
+    }
+
+}
+
+@media(max-width:1600px) {
+    .system_block {
+        bottom: 140%;
+        width: 450px;
+        height: 500px;
+    }
+
+    .mouse {
+        bottom: 20%;
+        left: 140%;
+    }
+
+    .keyboard {
+        bottom: 45%;
+        left: 35%;
+    }
+
+    .screen {
+        width: 500px;
+        height: 450px;
+    }
+
+}
+
+@media(max-width:1500px) {
+    .frame {
+        width: 400px;
+        height: 400px;
+    }
+
+    .system_block {
+        bottom: 210%;
+        width: 450px;
+        height: 500px;
+    }
+
+    .mouse {
+        bottom: 20%;
+        left: 140%;
+    }
+
+    .keyboard {
+        bottom: 60%;
+        left: 50%;
+    }
+
+    .screen {
+        width: 450px;
+        height: 400px;
+    }
+
+}
+
+@media (min-width: 1600px) {
+    .logo_header {
+        width: 30%;
+        height: 50px;
+    }
+
+    .menu {
+        width: 90%;
+    }
+
+    .menu>li {
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+    .system_block {
+        bottom: 180%;
+    }
+
+    .keyboard {
+        width: 500px;
+        height: 400px;
+        left: 20%;
+        bottom: 45%;
+    }
+
+    .seti {
+        margin-left: 500px;
+    }
+}
+
+
+@media (max-width: 1499px) {
+    .menu {
+        line-height: 0px;
+        width: 1400px;
+    }
+
+    .block {
+        height: 30%;
+    }
+
+    .screen {
+        width: 500px;
+        height: 400px;
+    }
+
+    .system_block {
+        width: 450px;
+        height: 500px;
+        bottom: 220%;
+    }
+
+    .mouse {
+        left: 140%;
+        bottom: 25%;
+    }
+
+    .keyboard {
+        bottom: 65%;
+        left: 40%;
+    }
+
+    .footer {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 15px;
+        height: 90px;
+        width: 100%;
+    }
+
+    .logo_footer {
+        font-family: 'Nunito';
+        padding-left: 150px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 17px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .seti {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 420px;
+    }
+}
+
+@media(max-width:1300px) {
+    .list_ul {
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: row;
+        height: 100%;
+    }
+
+    .frame {
+        width: 90%;
+    }
+
+    .screen {
+        width: 400px;
+        height: 350px;
+        right: 10%;
+        top: 0%;
+    }
+
+    .system_block {
+        width: 350px;
+        height: 400px;
+        left: 60%;
+        bottom: 190%;
+    }
+
+    .mouse {
+        width: 200px;
+        height: 100px;
+        left: 110%;
+        bottom: 25%;
+    }
+
+    .keyboard {
+        width: 400px;
+        height: 250px;
+        bottom: 70%;
+        left: 15%;
+    }
+
+    .submenu {
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 4%;
+        font-size: 17px;
+    }
+
+    .menu>li {
+        width: 100%;
+    }
+
+    .game_ad {
+        width: 70%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .game_img {
+        width: 40%;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    .list {
+        width: 100%;
+    }
+
+    .list_ul {
+        width: 100%;
+        text-align: center;
+    }
+
+    .list ul {
+        margin-left: 10%;
+    }
+
+}
+
+@media (max-width: 1023px) {
+    .list ul {
+        margin-left: 0%;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .container {
+        height: 100%;
+    }
+
+    .frame {
+        width: 90%;
+    }
+
+    .menu>li {
+        width: 100%;
+    }
+
+    .game_ad {
+        width: 70%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .game_img {
+        width: 40%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .list {
+        width: 100%;
+    }
+
+    .list_ul {
+        width: 100%;
+        text-align: center;
+    }
+
+    .mouse,
+    .screen,
+    .keyboard,
+    .system_block {
+        display: none;
+    }
+
+    .block {
+        width: 70%;
+        background: url(../img/компьютер.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        margin: 0 auto;
+    }
+
+    .seti {
+        padding-left: 20%;
+    }
+}
+
+
+@media (max-width: 769px) {
+    .game_ad {
+        width: 90%;
+    }
+
+    .block1_text {
+        width: 100%;
+        height: 400px;
+        text-align: center;
+    }
+
+    .block {
+        width: 90%;
+    }
+
+    .text_network {
+        font-size: 16px;
+        line-height: 17px;
+    }
+
+    .seti {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -110px;
+    }
+
+    .insta {
+        margin-top: -5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo_header {
+        width: 40%;
+    }
+
+    .menu {
+        width: 100%;
+        margin-top: 70px;
+    }
+
+    .block {
+        width: 100%;
+    }
+
+    .frame {
+        width: 90%;
+    }
+
+    .game_ad {
+        width: 80%;
+        gap: 10px;
+    }
+
+    .game_text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .game_img {
+        background-position: left;
+        width: 35%;
+    }
+
+    .game_img:hover {
+        background-position: left;
+    }
+
+    .footer {
+        display: flex;
+    }
+
+    .logo_footer {
+        padding-left: 60px;
+        font-size: 12px;
+    }
+
+    .seti {
+        padding-left: 100px;
+        justify-content: center;
+    }
+
+    .text_network {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .mail {
+        width: 30%;
+        height: 45px;
+        padding-top: 55px;
+    }
+}
+
+
+@media(max-width:320px) {
+    .menu {
+        width: 100%;
+        margin-top: 70px;
+    }
+
+    .game_text {
+        font-size: 12px;
+        line-height: 30px;
+    }
+
+    .list ul {
+        font-size: 20px;
+    }
+
+    .frame {
+        width: 90%;
+        height: 300px;
+    }
+
+    .block {
+        width: 90%;
+        margin-top: -10%;
+    }
+
+    .footer {
+        align-items: center;
+    }
+
+}
+
+@media(max-width:1920px) {
+    .container {
+        height: 50%;
+    }
+}
+
+@media(min-width:1921px) and (max-width:2560px) {
+    .frame {
+        width: 1000px;
+        height: 1000px;
+    }
+
+    .screen {
+        width: 700px;
+        height: 600px;
+        top: 0%;
+        right: 15%;
+    }
+
+    .keyboard {
+        width: 800px;
+        height: 600px;
+        bottom: 50%;
+        left: -7%;
+    }
+
+    .system_block {
+        width: 600px;
+        height: 700px;
+        left: 32%;
+        bottom: 140%;
+    }
+
+    .mouse {
+        bottom: 13%;
+        left: 60%;
+    }
+
+    .list {
+        width: 40%;
+        font-size: 60px;
+    }
+
+    .game_text {
+        font-size: 40px;
+    }
+
+    .container {
+        padding: 0;
+        height: 70vh;
+    }
+
+    .logo_footer {
+        padding-left: 2px;
+    }
+}

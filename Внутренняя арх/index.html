@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="script/jquery.js"></script>
+    <link rel="shortcut icon" href="./img/logot.png">
+    <title>Внутренняя архитектура</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section class="top-nav">
+            <a class="logo_header" href="../index.html"></a>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li class="main_page"><a href="../index.html">Главная страница</a></li>
+                <li class="inner" onmouseenter="openInnerSubMenu()"><a href="#">Внутренняя архитектура</a>
+                </li>
+                <li class="outer" onmouseenter="openOuterSubMenu()"><a href="../Внешняя арх/index.html">Внешняя
+                        архитектура</a>
+                </li>
+                <li class="games" onmouseenter="openGamesSubMenu()"><a href="../Переход на игры/index.html">Игры</a>
+                </li>
+            </ul>
+        </section>
+        <ul class="submenu submenu1" id="sm1" onmouseleave="closeInnerSubMenu()">
+            <li><a href="../Оперативная память/index.html">Оперативная память</a></li>
+            <li><a href="../Материнская плата/index.html">Материнская плата</a></li>
+            <li><a href="../Видеокарта/index.html">Видеокарта</a></li>
+            <li><a href="../Процессор/index.html">Процессор</a></li>
+            <li><a href="../Жесткий диск/index.html">Винчестер</a></li>
+            <li><a href="../Блок питания/index.html">Блок питания</a></li>
+        </ul>
+        <ul class="submenu submenu2" id="sm2" onmouseleave="closeGamesSubMenu()">
+            <li><a href="../Игра о внутренней/index.html">Игра о внутренней архитектуре</a></li>
+            <li><a href="../Игра о внешней/index.html">Игра о внешней архитектуре</a></li>
+        </ul>
+        <ul class="submenu submenu3" id="sm3" onmouseleave="closeOuterSubMenu()">
+            <li><a href="../Монитор/index.html">Монитор</a></li>
+            <li><a href="../Клавиатура/index.html">Клавиатура</a></li>
+            <li><a href="../Мышь/index.html">Мышь</a></li>
+            <li><a href="../Системный блок/index.html">Системный блок</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="block1">
+            <div class="frame">
+                <div class="processor"><img class="pro" src="./img/Процессор.png"></div>
+                <div class="videocard"><img class="video" src="./img/Видеокарта.png"></div>
+                <div class="matplata"><img class="mat" src="./img/Материнская плата.png"></div>
+                <div class="operat"><img class="op" src="./img/Оперативная память.png"></div>
+                <div class="disk_main"><img class="disk" src="./img/Жёсткий диск.png"></div>
+                <div class="power"><img class="block" src="./img/Блок питания.png"></div>
+            </div>
+        </div>
+        <div class="block2">
+            <div class="structure">
+                <div class="line"></div>
+                <ul class="text">
+                    <li class="proc" onmouseenter="zoomProcessorImage()" onmouseleave="unzoomProcessorImage()"><a
+                            href="../Процессор/index.html">Процессор</a></li>
+                    <li class="vid" onmouseenter="zoomVideoImage()" onmouseleave="unzoomVideoImage()"><a
+                            href="../Видеокарта/index.html">Видеокарта</a></li>
+                    <li class="plata" onmouseenter="zoomPlataImage()" onmouseleave="unzoomPlataImage()"><a
+                            href="../Материнская плата/index.html">Материнская плата</a></li>
+                    <li class="mind" onmouseenter="zoomMindImage()" onmouseleave="unzoomMindImage()"><a
+                            href="../Оперативная память/index.html">Оперативная память</a></li>
+                    <li class="hdd" onmouseenter="zoomHddImage()" onmouseleave="unzoomHddImage()"><a
+                            href="../Жесткий диск/index.html">Жёсткий
+                            диск</a></li>
+                    <li class="pitan" onmouseenter="zoomPitanImage()" onmouseleave="unzoomPitanImage()"><a
+                            href="../Блок питания/index.html">Блок
+                            питания</a></li>
+                </ul>
+            </div>
+            <div class="game">
+                <a class="text_game">Проверь свои знания с помощью <br> увлекательной игры!</a>
+                <a href="../Переход на игры/index.html" class="icon"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logo_footer">desPCription</div>
+        <div class="seti">
+            <div class="text_network">Ищите нас в соцсетях:</div>
+            <a href="https://e.mail.ru/inbox/?app_id_mytracker=undefined&authid=l3bwmdfa.tlc&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1"
+                class="mail"></a>
+            <a href="https://vk.com/public213309363" class="vk"></a>
+            <a href="https://instagram.com/despcription?igshid=YmMyMTA2M2Y=" class="insta"></a>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+    <script src="script/zoom.js"></script>
+</body>
+
+</html>

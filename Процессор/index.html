@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Процессор</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="./img/loggo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section class="top-nav">
+            <a class="logo_header" href="../index.html"></a>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li class="main_page"><a href="../index.html">Главная страница</a></li>
+                <li class="inner" onmouseenter="openInnerSubMenu()"><a href="../Внутренняя арх/index.html">Внутренняя
+                        архитектура</a>
+                </li>
+                <li class="outer" onmouseenter="openOuterSubMenu()"><a href="../Внешняя арх/index.html">Внешняя
+                        архитектура</a>
+                </li>
+                <li class="games" onmouseenter="openGamesSubMenu()"><a href="../Переход на игры/index.html">Игры</a>
+                </li>
+            </ul>
+        </section>
+        <ul class="submenu submenu1" id="sm1" onmouseleave="closeInnerSubMenu()">
+            <li><a href="../Оперативная память/index.html">Оперативная память</a></li>
+            <li><a href="../Материнская плата/index.html">Материнская плата</a></li>
+            <li><a href="../Видеокарта/index.html">Видеокарта</a></li>
+            <li><a href="#">Процессор</a></li>
+            <li><a href="../Жесткий диск/index.html">Винчестер</a></li>
+            <li><a href="../Блок питания/index.html">Блок питания</a></li>
+        </ul>
+        <ul class="submenu submenu2" id="sm2" onmouseleave="closeGamesSubMenu()">
+            <li><a href="../Игра о внутренней/index.html">Игра о внутренней архитектуре</a></li>
+            <li><a href="../Игра о внешней/index.html">Игра о внешней архитектуре</a></li>
+        </ul>
+        <ul class="submenu submenu3" id="sm3" onmouseleave="closeOuterSubMenu()">
+            <li><a href="../Монитор/index.html">Монитор</a></li>
+            <li><a href="../Клавиатура/index.html">Клавиатура</a></li>
+            <li><a href="../Мышь/index.html">Мышь</a></li>
+            <li><a href="../Системный блок/index.html">Системный блок</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="block1">
+            <div class="slaider">
+                <div class="slaider_text">Процессор</div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/1.jpg" />
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="img/2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/4.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/5.jpg" />
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="img/3.png" />
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+            </div>
+
+            <div class="buttons">
+                <div class="button_1">
+                    <div class="button1_image" onmouseenter="openButton1()" onmouseleave="closeButton1()"></div>
+                    <div class="button_1_text"><span class="text123">Выполнение арифметических и логических операций с
+                            полученными данными</span></div>
+                </div>
+                <div class="button_2">
+                    <div class="button2_image" onmouseenter="openButton2()" onmouseleave="closeButton2()"></div>
+                    <div class="button_2_text"><span class="text456">Передача результатов обработки данных на внешние
+                            устройства</span></div>
+                </div>
+                <div class="button_3">
+                    <div class="button3_image" onmouseenter="openButton3()" onmouseleave="closeButton3()"></div>
+                    <div class="button_3_text"><span class="text789">Создание сигналов для работы внутренних элементов и
+                            внешних устройств</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="block2">
+            <div class="block_2_image"></div>
+            <div class="block_2_text">Это мозг компьютера. Он является главным компонентом и производит все вычисления в
+                компьютере, контролирует все операции и процессы. Также является одним из самых дорогих компонентов, и
+                цена очень хорошего современного процессора может переваливать за 50 000 рублей.<br><br><br>
+                Бывают процессоры фирмы Intel и AMD. Тут кому что нравится, а так, Интелы меньше нагреваются, потребляют
+                меньше электроэнергии. При всём этом у AMD лучше идёт обработка графики, т.е. больше подошёл бы для
+                игровых компьютеров и тех, где работа будет вестись с мощными редакторами изображений, 3D графики,
+                видео.</div>
+        </div>
+        <div class="block3">
+            <div class="block3_text">Топ в отношении цена/производительность</div>
+            <div class="block3_cards">
+                <div class="card">
+                    <div class="card_image_1"></div>
+                    <div class="card_title">AMD Ryzen 5 3600</div>
+                    <div class="card_subtitle">
+                        <ul>
+                            <li>Matisse, 6 ядер</li>
+                            <li>техпроцесс 7 нм</li>
+                            <li>AM4</li>
+                            <li>частота 4.2/3.6ГГц.</li>
+                            <li>кэш 3 МБ + 32 МБ</li>
+                            <li>TDP 65W</li>
+                        </ul>
+                    </div>
+                    <div class="card_cost">658 BYN</div>
+                </div>
+                <div class="card">
+                    <div class="card_image_2"></div>
+                    <div class="card_title">Intel Core i5-12400</div>
+                    <div class="card_subtitle">
+                        <ul>
+                            <li>Alder Lake, 6 ядер</li>
+                            <li>техпроцесс 10 нм</li>
+                            <li>LGA1700</li>
+                            <li>частота 4.4/2.5ГГц.</li>
+                            <li>кэш 7.5 МБ + 18 МБ</li>
+                            <li>TDP 117W</li>
+                        </ul>
+                    </div>
+                    <div class="card_cost">725 BYN</div>
+                </div>
+                <div class="card">
+                    <div class="card_image_3"></div>
+                    <div class="card_title">Intel Core i7-9700F</div>
+                    <div class="card_subtitle">
+                        <ul>
+                            <li>Coffee Lake, 8 ядер</li>
+                            <li>техпроцесс 14 нм</li>
+                            <li>LGA1151 v2</li>
+                            <li>частота 4.7/3ГГц.</li>
+                            <li>кэш 12 МБ</li>
+                            <li>TDP 65W</li>
+                        </ul>
+                    </div>
+                    <div class="card_cost">876 BYN</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logo_footer">desPCription</div>
+        <div class="seti">
+            <div class="text_network">Ищите нас в соцсетях:</div>
+            <a href="https://e.mail.ru/inbox/?app_id_mytracker=undefined&authid=l3bwmdfa.tlc&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1"
+                class="mail"></a>
+            <a href="https://vk.com/public213309363" class="vk"></a>
+            <a href="https://instagram.com/despcription?igshid=YmMyMTA2M2Y=" class="insta"></a>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script/swiper.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/zoom.js"></script>
+</body>
+
+</html>

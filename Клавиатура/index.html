@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <title>Клавиатура</title>
+    <link rel="shortcut icon" href="./img/logot.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section class="top-nav">
+            <a class="logo_header" href="../index.html"></a>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li class="main_page"><a href="../index.html">Главная страница</a></li>
+                <li class="inner" onmouseenter="openInnerSubMenu()"><a href="../Внутренняя арх/index.html">Внутренняя
+                        архитектура</a>
+                </li>
+                <li class="outer" onmouseenter="openOuterSubMenu()"><a href="../Внешняя арх/index.html">Внешняя
+                        архитектура</a>
+                </li>
+                <li class="games" onmouseenter="openGamesSubMenu()"><a href="../Переход на игры/index.html">Игры</a>
+                </li>
+            </ul>
+        </section>
+        <ul class="submenu submenu1" id="sm1" onmouseleave="closeInnerSubMenu()">
+            <li><a href="../Оперативная память/index.html">Оперативная память</a></li>
+            <li><a href="../Материнская плата/index.html">Материнская плата</a></li>
+            <li><a href="../Видеокарта/index.html">Видеокарта</a></li>
+            <li><a href="../Процессор/index.html">Процессор</a></li>
+            <li><a href="../Жесткий диск/index.html">Винчестер</a></li>
+            <li><a href="../Блок питания/index.html">Блок питания</a></li>
+        </ul>
+        <ul class="submenu submenu2" id="sm2" onmouseleave="closeGamesSubMenu()">
+            <li><a href="../Игра о внутренней/index.html">Игра о внутренней архитектуре</a></li>
+            <li><a href="../Игра о внешней/index.html">Игра о внешней архитектуре</a></li>
+        </ul>
+        <ul class="submenu submenu3" id="sm3" onmouseleave="closeOuterSubMenu()">
+            <li><a href="../Монитор/index.html">Монитор</a></li>
+            <li><a href="#">Клавиатура</a></li>
+            <li><a href="../Мышь/index.html">Мышь</a></li>
+            <li><a href="../Системный блок/index.html">Системный блок</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="block1">
+            <div class="slaider">
+                <div class="slaider_text">Клавиатура</div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/Слайдер1.jpg" />
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="img/Слайдер2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Слайдер3.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Слайдер4.jpg" />
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="img/Слайдер5.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Слайдер6.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Слайдер7.jpg" />
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="block2">
+            <div class="block2_text">
+                <div class="block2_descripton" onclick="menu1_zoom()">
+                    <p class="h1">Описание</p>
+                </div>
+                <div class="block2_chatacteristics" onclick="menu2_zoom()">
+                    <p class="h2">Характеристики</p>
+                </div>
+                <div class="block2_models" onclick="menu3_zoom()">
+                    <p class="h3">Популярные модели</p>
+                </div>
+            </div>
+            <div class="menues">
+                <div class="menu1">
+                    <div class="menu1_container">
+                        <div class="menu1_image"></div>
+                        <div class="menu1_text">
+                            <span>Первоначально для ввода текстовых данных в компьютер использовались
+                                электромеханические телетайпы, позже их сменили специализированные видеотерминалы. В
+                                таком терминале клавиатура являлась его частью, даже если выполнялась в отдельном
+                                корпусе. Никаких стандартов как по электрической части, так и по составу и расположению
+                                кнопок не было. Такие терминалы могли иметь отдельные клавиши для управления курсором,
+                                прокрутки текста на экране или подачи управляющих сигналов. <br><br>
+                                Цифровой блок клавиатуры содержит 17 клавиш, аналогичных применяемым в калькуляторах,
+                                кассовых аппаратах и тому подобном. Основное назначение клавиш блока цифровой клавиатуры
+                                — дублирование функций клавиш алфавитно-цифрового блока в части ввода цифр и символов
+                                основных арифметических операций.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu2">
+                    <div class="column">
+                        <div class="offer">
+                            <div class="icon1"></div>
+                            <div class="text">
+                                <div class="text_title">Тип:</div>
+                                <div class="text_subtitle">игровая, стандартная, офисная,
+                                    мультимедийная, компактная
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offer">
+                            <div class="icon2"></div>
+                            <div class="text">
+                                <div class="text_title">Технология переключателя:</div>
+                                <div class="text_subtitle">мембранная, механическая, оптическая, механико-оптическая,
+                                    механико-мембранная, ножничная</div>
+                            </div>
+                        </div>
+                        <div class="offer">
+                            <div class="icon3"></div>
+                            <div class="text">
+                                <div class="text_title">Ход переключателя:</div>
+                                <div class="text_subtitle">линейный, тактильный, с кликом, без клика</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="offer">
+                            <div class="icon4"></div>
+                            <div class="text">
+                                <div class="text_title">Назначения:</div>
+                                <div class="text_subtitle">для ПК, для Sony PlayStation, для Microsoft Xbox, для
+                                    компьютеров Apple, для iPad</div>
+                            </div>
+                        </div>
+                        <div class="offer">
+                            <div class="icon5"></div>
+                            <div class="text">
+                                <div class="text_title">Подключение:</div>
+                                <div class="text_subtitle">USB, радио, Bluetooth, док-порт, PS/2</div>
+                            </div>
+                        </div>
+                        <div class="offer">
+                            <div class="icon6"></div>
+                            <div class="text">
+                                <div class="text_title">Дополнительные опции:</div>
+                                <div class="text_subtitle">сенсорная панель, ролик управления громкостью, оплетка
+                                    кабеля, аудиовход, аудиовыход</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="menu3">
+                    <div class="cards">
+                        <div class="card">
+                            <div class="card_image1"></div>
+                            <div class="card_text">
+                                <div class="card_title"><span>Logitech G213 Prodigy</span></div>
+                                <div class="card_subtitle"><span>игровая, мембранная, пластик, интерфейс подключения -
+                                        USB, подсветка, влагозащита, цвет черный</span></div>
+                                <div class="card_cost"><span>191 BYN</span></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_image2"></div>
+                            <div class="card_text">
+                                <div class="card_title"><span>HyperX Alloy Core RGB</span></div>
+                                <div class="card_subtitle"><span>игровая для ПК, мембранная, пластик, интерфейс
+                                        подключения - USB, подсветка, влагозащита, цвет черный</span></div>
+                                <div class="card_cost"><span>159 BYN</span></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_image3"></div>
+                            <div class="card_text">
+                                <div class="card_title"><span>Razer Cynosa v2</span></div>
+                                <div class="card_subtitle"><span>игровая для ПК/для Microsoft Xbox, мембранная, пластик,
+                                        интерфейс подключения - USB, подсветка, влагозащита, цвет черный</span></div>
+                                <div class="card_cost"><span>189 BYN</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logo_footer">desPCription</div>
+        <div class="seti">
+            <div class="text_network">Ищите нас в соцсетях:</div>
+            <a href="https://e.mail.ru/inbox/?app_id_mytracker=undefined&authid=l3bwmdfa.tlc&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1"
+                class="mail"></a>
+            <a href="https://vk.com/public213309363" class="vk"></a>
+            <a href="https://instagram.com/despcription?igshid=YmMyMTA2M2Y=" class="insta"></a>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/zoom.js"></script>
+</body>
+
+</html>

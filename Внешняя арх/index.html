@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Внешняя архитектура</title>
+    <link rel="shortcut icon" href="img/image_for_site.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section class="top-nav">
+            <a class="logo_header" href="../index.html"></a>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li class="main_page"><a href="../index.html">Главная страница</a></li>
+                <li class="inner" onmouseenter="openInnerSubMenu()"><a href="../Внутренняя арх/index.html">Внутренняя
+                        архитектура</a>
+                </li>
+                <li class="outer" onmouseenter="openOuterSubMenu()"><a href="#">Внешняя архитектура</a>
+                </li>
+                <li class="games" onmouseenter="openGamesSubMenu()"><a href="../Переход на игры/index.html">Игры</a>
+                </li>
+            </ul>
+        </section>
+        <ul class="submenu submenu1" id="sm1" onmouseleave="closeInnerSubMenu()">
+            <li><a href="../Оперативная память/index.html">Оперативная память</a></li>
+            <li><a href="../Материнская плата/index.html">Материнская плата</a></li>
+            <li><a href="../Видеокарта/index.html">Видеокарта</a></li>
+            <li><a href="../Процессор/index.html">Процессор</a></li>
+            <li><a href="../Жесткий диск/index.html">Винчестер</a></li>
+            <li><a href="../Блок питания/index.html">Блок питания</a></li>
+        </ul>
+        <ul class="submenu submenu2" id="sm2" onmouseleave="closeGamesSubMenu()">
+            <li><a href="../Игра о внутренней/index.html">Игра о внутренней архитектуре</a></li>
+            <li><a href="../Игра о внешней/index.html">Игра о внешней архитектуре</a></li>
+        </ul>
+        <ul class="submenu submenu3" id="sm3" onmouseleave="closeOuterSubMenu()">
+            <li><a href="../Монитор/index.html">Монитор</a></li>
+            <li><a href="../Клавиатура/index.html">Клавиатура</a></li>
+            <li><a href="../Мышь/index.html">Мышь</a></li>
+            <li><a href="../Системный блок/index.html">Системный блок</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="block">
+            <div class="frame">
+                <div class="screen"><img src="img/монитор.png" alt="" class="screen_img"></div>
+                <div class="mouse"><img src="img/мышь.png" alt="" class="mouse_img"></div>
+                <div class="keyboard"><img src="img/клавиатура.png" alt="" class="keyboard_img"></div>
+                <div class="system_block"><img src="img/системный блок.png" alt="" class="system_block_img"></div>
+            </div>
+        </div>
+        <div class="list">
+            <div class="list_ul">
+                <ul>
+                    <li><a href="../Монитор/index.html" onmouseenter="ScreenZoom()"
+                            onmouseleave="UnScreenZoom()">Монитор</a></li>
+                    <li><a href="../Мышь/index.html" onmouseenter="MouseZoom()"
+                            onmouseleave="UnMouseZoom()">Компьютерная Мышь</a></li>
+                    <li><a href="../Клавиатура/index.html" onmouseenter="KeyboardZoom()"
+                            onmouseleave="UnKeyboardZoom()">Компьютерная
+                            Клавиатура</a></li>
+                    <li><a href="../Системный блок/index.html" onmouseenter="BlockZoom()"
+                            onmouseleave="UnBlockZoom()">Системный Блок</a></li>
+                </ul>
+
+            </div>
+            <div class="game_ad">
+                <div class="game_text">
+                    Хочешь собрать свой компьютер? Тогда тебе сюда
+                </div>
+                <a href="../Переход на игры/index.html" class="game_img"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="logo_footer">desPCription</div>
+        <div class="seti">
+            <div class="text_network">Ищите нас в соцсетях:</div>
+            <a href="https://e.mail.ru/inbox/?app_id_mytracker=undefined&authid=l3bwmdfa.tlc&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1"
+                class="mail"></a>
+            <a href="https://vk.com/public213309363" class="vk"></a>
+            <a href="https://instagram.com/despcription?igshid=YmMyMTA2M2Y=" class="insta"></a>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+    <script src="script/zoom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Видеокарта</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="./img/loggo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section class="top-nav">
+            <a class="logo_header" href="../index.html"></a>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li class="main_page"><a href="../index.html">Главная страница</a></li>
+                <li class="inner" onmouseenter="openInnerSubMenu()"><a href="../Внутренняя арх/index.html">Внутренняя
+                        архитектура</a>
+                </li>
+                <li class="outer" onmouseenter="openOuterSubMenu()"><a href="../Внешняя арх/index.html">Внешняя
+                        архитектура</a>
+                </li>
+                <li class="games" onmouseenter="openGamesSubMenu()"><a href="../Переход на игры/index.html">Игры</a>
+                </li>
+            </ul>
+        </section>
+        <ul class="submenu submenu1" id="sm1" onmouseleave="closeInnerSubMenu()">
+            <li><a href="../Оперативная память/index.html">Оперативная память</a></li>
+            <li><a href="../Материнская плата/index.html">Материнская плата</a></li>
+            <li><a href="#">Видеокарта</a></li>
+            <li><a href="../Процессор/index.html">Процессор</a></li>
+            <li><a href="../Жесткий диск/index.html">Винчестер</a></li>
+            <li><a href="../Блок питания/index.html">Блок питания</a></li>
+        </ul>
+        <ul class="submenu submenu2" id="sm2" onmouseleave="closeGamesSubMenu()">
+            <li><a href="../Игра о внутренней/index.html">Игра о внутренней архитектуре</a></li>
+            <li><a href="../Игра о внешней/index.html">Игра о внешней архитектуре</a></li>
+        </ul>
+        <ul class="submenu submenu3" id="sm3" onmouseleave="closeOuterSubMenu()">
+            <li><a href="../Монитор/index.html">Монитор</a></li>
+            <li><a href="../Клавиатура/index.html">Клавиатура</a></li>
+            <li><a href="../Мышь/index.html">Мышь</a></li>
+            <li><a href="../Системный блок/index.html">Системный блок</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="block1">
+            <div class="slaider">
+                <div class="slaider_text">Видеокарта</div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/3.webp" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/4.webp" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/5.webp" />
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+            </div>
+
+            <div class="buttons">
+                <div class="button_1">
+                    <div class="button1_image" onmouseenter="openButton1()" onmouseleave="closeButton1()"></div>
+                    <div class="button_1_text"><span class="text123">Формирование сигналов горизонтальной и вертикальной
+                            синхронизации</span></div>
+                </div>
+                <div class="button_2">
+                    <div class="button2_image" onmouseenter="openButton2()" onmouseleave="closeButton2()"></div>
+                    <div class="button_2_text"><span class="text456">Обработка видеосигналов</span></div>
+                </div>
+                <div class="button_3">
+                    <div class="button3_image" onmouseenter="openButton3()" onmouseleave="closeButton3()"></div>
+                    <div class="button_3_text"><span class="text789">Ускорение 2D- и 3D-графики</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="block2">
+            <div class="block_2_image"></div>
+            <div class="block_2_text">Это устройство отвечает за формирование и вывод изображения на экран монитора или
+                любого другого аналогичного подключенного устройства. Видеокарты бывают встроенными (интегрированными) и
+                внешними (дискретными). Встроенная видеокарта на сегодняшний день имеется в подавляющем большинстве
+                материнских плат и визуально мы видим лишь её выход – разъём для подключения монитора. Внешняя
+                видеокарта подключается к плате отдельно в виде ещё одной платы со своей системой охлаждения (радиатор
+                или вентилятор).</div>.
+        </div>
+        <div class="block3">
+            <div class="block3_text">Топ в отношении цена/производительность</div>
+            <div class="block3_cards">
+                <div class="card">
+                    <div class="card_image_1"></div>
+                    <div class="card_title">Palit GeForce GTX 1060 Dual</div>
+                    <div class="card_subtitle">
+                        <ul>
+                            <li>6ГБ GDDR5</li>
+                            <li>Базовая частота 1506 МГц</li>
+                            <li>Макс.частота 1708МГц, 1280sp</li>
+                            <li>Частота памяти 8000МГц</li>
+                            <li>192 бит</li>
+                            <li>Доп. питание: 6 pin, 2 слота</li>
+                        </ul>
+                    </div>
+                    <div class="card_cost">850 BYN</div>
+                </div>
+                <div class="card">
+                    <div class="card_image_2"></div>
+                    <div class="card_title">NVIDIA GeForce RTX 3050</div>
+                    <div class="card_subtitle">
+                        <ul>
+                            <li>8ГБ GDDR6 LHR</li>
+                            <li>Базовая частота 1550 МГц</li>
+                            <li>Макс.частота 1807МГц, 2560sp</li>
+                            <li>Частота памяти 14000МГц</li>
+                            <li>128 бит</li>
+                            <li>Доп. питание: 8 pin</li>
+                        </ul>
+                    </div>
+                    <div class="card_cost">1720 BYN</div>
+                </div>
+                <div class="card">
+                    <div class="card_image_3"></div>
+                    <div class="card_title">Gigabyte GeForce RTX 3050</div>
+                    <div class="card_subtitle">
+                        <ul>
+                            <li>8ГБ GDDR6 LHR</li>
+                            <li>Базовая частота 1550 МГц</li>
+                            <li>Макс.частота 1807МГц, 2560sp</li>
+                            <li>Частота памяти 14000МГц</li>
+                            <li>128 бит</li>
+                            <li>Доп. питание: 8 pin, 2 слота</li>
+                        </ul>
+                    </div>
+                    <div class="card_cost">1850 BYN</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logo_footer">desPCription</div>
+        <div class="seti">
+            <div class="text_network">Ищите нас в соцсетях:</div>
+            <a href="https://e.mail.ru/inbox/?app_id_mytracker=undefined&authid=l3bwmdfa.tlc&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1"
+                class="mail"></a>
+            <a href="https://vk.com/public213309363" class="vk"></a>
+            <a href="https://instagram.com/despcription?igshid=YmMyMTA2M2Y=" class="insta"></a>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script/swiper.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/zoom.js"></script>
+</body>
+
+</html>

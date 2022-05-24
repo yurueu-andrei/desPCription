@@ -1,0 +1,892 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: #C9C9C9;
+}
+
+a:hover {
+    text-decoration: underline;
+    border-bottom: 7px;
+    color: #C9C9C9;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+
+
+@font-face {
+    font-family: 'Nunito';
+    src: url(../fonts/Nunito-ExtraLight.ttf);
+}
+
+header {
+    background-image: url(../img/Rectangle\ 4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo_header {
+    background-image: url(../img/logo_new.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 60%;
+    height: 40px;
+}
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-size: 100%;
+    color: #fff;
+    height: 50px;
+    padding: 35px 8%;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 15px;
+    line-height: 15px;
+    z-index: 1000;
+
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 10px 0 10px 0;
+    line-height: 20px;
+}
+
+.submenu a {
+    text-decoration: none;
+}
+
+.menu>li {
+    padding: 0 1rem;
+    position: relative;
+}
+
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+}
+
+.menu-button::before {
+    content: "";
+    margin-top: -8px;
+}
+
+.menu-button::after {
+    content: "";
+    margin-top: 8px;
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+}
+
+@media (max-width: 769px) {
+    .menu-button-container {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 50px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu-toggle~.menu li {
+        height: 20px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        visibility: hidden;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #menu-toggle:checked~.menu li {
+        visibility: visible;
+        border: 1px solid #333;
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .menu>li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: white;
+        background-color: #222;
+    }
+
+    .menu>li:not(:last-child) {
+        border-bottom: 1px solid #444;
+    }
+
+    #sm1,
+    #sm2,
+    #sm3 {
+        display: none;
+    }
+}
+
+.inner,
+.outer,
+.games,
+.main_page {
+    display: flex;
+    justify-content: center;
+    font-family: 'Nunito';
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.inner:hover,
+.outer:hover,
+.games:hover,
+.main_page:hover {
+    border-bottom: 4px solid white;
+    border-radius: 3px 3px 0px 0px;
+}
+
+.submenu {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 0px;
+    font-size: 22px;
+    letter-spacing: 0.1em;
+    background-image: url(../img/header_new.png);
+    transition: all 1s;
+    padding: 20px 170px;
+    visibility: hidden;
+}
+
+.submenu li:hover {
+    border-bottom: 1px solid white;
+}
+
+.block1 {
+    background: url(../img/background_block1.jpg);
+    width: 100%;
+    height: 85%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 8%;
+    padding-top: 5%;
+
+}
+
+.block1_text {
+    background: url(../img/background_text.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 70%;
+    text-align: justify;
+    padding: 2% 4%;
+    font-family: 'Inter';
+    font-size: calc(20px + 4 * (100vh / 1900));
+
+    line-height: 29px;
+
+    color: #FFFFFF;
+
+}
+
+.block2_container {
+    width: 100%;
+    height: 120%;
+    margin-top: -5px;
+    display: flex;
+    justify-content: center;
+    background-color: #000016;
+}
+
+.block2 {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -10%;
+    width: 60%;
+    background: url(../img/фон3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block2_title {
+    text-align: center;
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: calc(25px + 3 * (100vh / 1920));
+
+    color: #FFFFFF;
+}
+
+.block2_stars {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    height: 25%;
+}
+
+.star {
+    width: 27%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.star_image {
+    height: 40%;
+    width: 50%;
+}
+
+.star_image img {
+    width: 100%;
+    height: 100%;
+}
+
+.star_title {
+    text-align: center;
+    font-family: 'Nunito';
+    font-size: calc(20px + 3 * (100vh / 1920));
+    color: #8D0303;
+}
+
+.star_subtitle {
+    width: 90%;
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: calc(15px + 3 * (100vh / 1920));
+    text-align: justify;
+    color: #FFFFFF;
+}
+
+.block2_choise {
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    height: 45%;
+    border-top: 0.5px solid black;
+}
+
+.outer_game,
+.inner_game {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+}
+
+.choise_image {
+    width: 100%;
+    height: 50%;
+}
+
+.choise_image img {
+    width: 100%;
+    height: 100%;
+}
+
+.choise_title {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: calc(20px + 3 * (100vh / 1920));
+    color: #FFFFFF;
+}
+
+.choise_subtitle {
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: calc(16px + 3 * (100vh / 1920));
+    text-align: justify;
+    color: #FFFFFF;
+}
+
+.choise_button {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+    padding: 4%;
+    width: 80%;
+    background-color: #BCBCBC;
+    cursor: pointer;
+}
+
+.choise_button:hover {
+    background-color: white;
+    text-decoration: none;
+}
+
+.button_text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 29px;
+    color: #000000;
+
+}
+
+.footer {
+    display: flex;
+    background-image: url(../img/Rectangle\ 4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    height: 13vh;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo_footer {
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 17px;
+    color: rgba(255, 255, 255, 0.8);
+    padding-top: 0px;
+}
+
+.seti {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text_network {
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #C9C9C9;
+}
+
+.mail {
+    background-image: url(../img/mail.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30%;
+    height: 55px;
+}
+
+.vk {
+    background-image: url(../img/vk.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30%;
+    height: 55px;
+}
+
+.insta {
+    background-image: url(../img/insta.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30%;
+    height: 45px;
+}
+
+
+
+@media(min-width:1600px) {
+    .logo_header {
+        width: 30%;
+        height: 50px;
+    }
+
+    .menu {
+        width: 90%;
+    }
+
+    .menu>li {
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+    .seti {
+        margin-left: 500px;
+    }
+
+    .block1_text {
+        font-size: calc(16px + 4 * (100vh / 1600));
+    }
+}
+
+@media(min-width:2000px) {
+    .block1_text {
+        font-size: calc(25px + 4 * (100vh / 2500));
+        background-size: cover;
+    }
+}
+
+@media(max-width:1599px) {
+    .star_title {
+        font-size: calc(15px + 2 * (100vh / 1920));
+    }
+
+    .star_subtitle {
+        font-size: calc(11px + 2 * (100vh / 1920));
+    }
+
+    .choise_subtitle {
+        font-size: calc(13px + 2 * (100vh / 1920));
+    }
+
+    .block1_text {
+        font-size: calc(17px + 4 * (100vh / 1440));
+        line-height: 24px;
+    }
+}
+
+@media(max-width:1440px) {
+    .menu {
+        line-height: 0px;
+        width: 1400px;
+    }
+
+    .button_text {
+        font-size: calc(17px + 4 * (100vh / 1440));
+    }
+
+    .choise_button {
+        padding: 6%;
+    }
+
+    .star_image {
+        width: 70%;
+    }
+
+    .choise_image {
+        height: 40%;
+    }
+
+    .choise_subtitle {
+        font-size: calc(10px + 4 * (100vh / 1440));
+    }
+
+    .block1_text {
+        line-height: 22px;
+        font-size: calc(15px + 2 * (100vh / 1024));
+    }
+
+    .footer {
+        display: flex;
+        background-image: url(../img/Rectangle\ 4.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 15px;
+        height: 90px;
+        width: 100%;
+    }
+
+    .logo_footer {
+        font-family: 'Nunito';
+        padding-left: 150px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 17px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .seti {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 420px;
+    }
+
+}
+
+@media(max-width:1100px) {
+    .star_subtitle {
+        width: 117%;
+    }
+}
+
+@media(max-width:1024px) {
+    .menu {
+        width: 100%;
+    }
+
+    .menu>li {
+        width: 100%;
+    }
+
+    .button_text {
+        font-size: calc(15px + 4 * (100vh / 1024));
+    }
+
+    .block2_title {
+        font-size: calc(17px + 3 * (100vh / 1920));
+    }
+
+    .star_image {
+        width: 80%;
+    }
+
+    .star_subtitle {
+        font-size: calc(9px + 2 * (100vh / 1024));
+    }
+
+    .star_title {
+        font-size: calc(15px + 2 * (100vh / 1920));
+    }
+
+    .block1_text {
+        font-size: calc(10px + 2 * (100vh / 768));
+    }
+
+    .seti {
+        padding-left: 20%;
+    }
+}
+
+@media(max-width:900px) {
+    .choise_image {
+        width: 130%;
+    }
+}
+
+@media(max-width:768px) {
+    .menu {
+        width: 100%;
+        margin-top: 70px;
+    }
+
+    .block2_container {
+        height: 150%;
+    }
+
+    .block2 {
+        padding-top: 20%;
+        width: 90%;
+        margin-top: -10%;
+    }
+
+    .block2_title {
+        font-size: calc(15px + 3 * (100vh / 1920));
+    }
+
+    .block2_stars {
+        align-items: center;
+        height: 30%;
+        width: 70%;
+        flex-direction: column;
+    }
+
+    .block2_choise {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 55%;
+    }
+
+    .choise_subtitle {
+        font-size: calc(7px + 4 * (100vh / 1440));
+    }
+
+    .choise_image {
+        width: 60%;
+        height: 51%;
+    }
+
+    .outer_game,
+    .inner_game {
+        width: 50%;
+        height: 46%;
+    }
+
+    .block1 {
+        padding-left: 0;
+        height: 50%;
+    }
+
+    .block1_text {
+        font-size: calc(8px + 2 * (100vh / 600));
+        width: 98%;
+        height: 51%;
+        line-height: 20px;
+    }
+
+    .star_image {
+        width: 25%;
+    }
+
+    .star {
+        width: 50%;
+        height: 30%;
+    }
+
+    .star_title {
+        font-size: calc(14px + 2 * (100vh / 1024));
+    }
+
+    .logo_footer {
+        font-size: 14px;
+        padding-right: 60px;
+    }
+
+    .seti {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -110px;
+    }
+
+    .text_network {
+        font-size: 16px;
+        line-height: 17px;
+    }
+
+    .insta {
+        margin-top: -5px;
+    }
+
+}
+
+@media(max-width:600px) {
+    .star_subtitle {
+        font-size: calc(5px + 2 * (100vh / 600));
+    }
+
+    .star_image {
+        width: 30%;
+    }
+
+    .block1_text {
+        font-size: calc(8px + 2 * (100vh / 600));
+        width: 98%;
+        height: 51%;
+        line-height: 15px;
+    }
+}
+
+@media(max-width:468px) {
+    .logo_header {
+        width: 40%;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .block2 {
+        gap: 4%;
+    }
+
+    .block1_text {
+        font-size: calc(6px + 2 * (100vh / 468));
+        line-height: 12px;
+    }
+
+    .star_subtitle {
+        font-size: calc(4px + 2 * (100vh / 468));
+    }
+
+    .choise_subtitle {
+        font-size: calc(7px + 2 * (100vh / 468));
+    }
+
+    .choise_image {
+        width: 120%;
+        height: 35%;
+    }
+
+    .button_text {
+        font-size: calc(10px + 2 * (100vh / 468));
+    }
+
+    .footer {
+        display: flex;
+    }
+
+    .logo_footer {
+        padding-left: 60px;
+        font-size: 12px;
+    }
+
+    .seti {
+        padding-left: 100px;
+        justify-content: center;
+    }
+
+    .text_network {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .mail {
+        width: 30%;
+        height: 45px;
+        padding-top: 55px;
+    }
+
+    .insta {
+        width: 30%;
+        height: 31px;
+        padding-top: 59px;
+    }
+
+}
+
+@media(max-width:320px) {
+    .menu {
+        width: 100%;
+    }
+
+    .choise_subtitle {
+        width: 140%;
+    }
+
+    .logo_footer {
+        padding-left: 2px;
+    }
+
+    .star {
+        width: 73%;
+    }
+}

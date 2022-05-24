@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Блок питания</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="./img/logooo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section class="top-nav">
+            <a class="logo_header" href="../index.html"></a>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li class="main_page"><a href="../index.html">Главная страница</a></li>
+                <li class="inner" onmouseenter="openInnerSubMenu()"><a href="../Внутренняя арх/index.html">Внутренняя
+                        архитектура</a>
+                </li>
+                <li class="outer" onmouseenter="openOuterSubMenu()"><a href="../Внешняя арх/index.html">Внешняя
+                        архитектура</a>
+                </li>
+                <li class="games" onmouseenter="openGamesSubMenu()"><a href="../Переход на игры/index.html">Игры</a>
+                </li>
+            </ul>
+        </section>
+        <ul class="submenu submenu1" id="sm1" onmouseleave="closeInnerSubMenu()">
+            <li><a href="../Оперативная память/index.html">Оперативная память</a></li>
+            <li><a href="../Материнская плата/index.html">Материнская плата</a></li>
+            <li><a href="../Видеокарта/index.html">Видеокарта</a></li>
+            <li><a href="../Процессор/index.html">Процессор</a></li>
+            <li><a href="../Жесткий диск/index.html">Винчестер</a></li>
+            <li><a href="#">Блок питания</a></li>
+        </ul>
+        <ul class="submenu submenu2" id="sm2" onmouseleave="closeGamesSubMenu()">
+            <li><a href="../Игра о внутренней/index.html">Игра о внутренней архитектуре</a></li>
+            <li><a href="../Игра о внешней/index.html">Игра о внешней архитектуре</a></li>
+        </ul>
+        <ul class="submenu submenu3" id="sm3" onmouseleave="closeOuterSubMenu()">
+            <li><a href="../Монитор/index.html">Монитор</a></li>
+            <li><a href="../Клавиатура/index.html">Клавиатура</a></li>
+            <li><a href="../Мышь/index.html">Мышь</a></li>
+            <li><a href="../Системный блок/index.html">Системный блок</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="block1">
+            <div class="slaider">
+                <div class="slaider_text">Блок питания</div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/1.webp" />
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="img/2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/3.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/4.jpg" />
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="img/5.jpg" />
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+            </div>
+
+            <div class="buttons">
+                <div class="button_1">
+                    <div class="button1_image" onmouseenter="openButton1()" onmouseleave="closeButton1()"></div>
+                    <div class="button_1_text"><span class="text123">Преобразовывает переменный ток в постоянный</span>
+                    </div>
+                </div>
+                <div class="button_2">
+                    <div class="button2_image" onmouseenter="openButton2()" onmouseleave="closeButton2()"></div>
+                    <div class="button_2_text"><span class="text456">Понижение напряжения, избыточного для компьютерной
+                            электроники</span></div>
+                </div>
+                <div class="button_3">
+                    <div class="button3_image" onmouseenter="openButton3()" onmouseleave="closeButton3()"></div>
+                    <div class="button_3_text"><span class="text789">Стабилизация напряжения</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="block2">
+            <div class="block_2_image"></div>
+            <div class="block_2_text">
+                Очень важный компонент компьютера. Он подключается к электросети и служит для снабжения постоянным током
+                всех друших компонентов компьютера, преобразуя сетевое напряжение до требуемых значений. А устройства
+                компьютера работают на напряжениях: +3.3В, +5В, +12В. Отрицательные значения практически не
+                используются. Основной характеристикой блока питания является его мощность и измеряется, соответственно,
+                в Ваттах. В компьютер ставится блок питания с такой мощностью, чтобы ее хватило для питания всех
+                компонентов компьютера. Больше всего будет потреблять видеоадаптер (потребляемая им мощность будет
+                обязательно указана в документации), поэтому ориентироваться нужно на него и брать просто с небольшим
+                запасом. Также блок питания должен иметь все необходимые компоненты для подключения ко всем имеющимся
+                компонентам компьютера.
+            </div>
+        </div>
+        <div class="block3">
+            <div class="block3_text">Топ в отношении цена/производительность</div>
+            <div class="block3_cards">
+                <div class="card">
+                    <div class="card_image_1"></div>
+                    <div class="card_title">Zalman MegaMax</div>
+                    <div class="card_subtitle">
+                        <ul>
+                            <li>700W ZM700-TXII</li>
+                            <li>активная PFC, ККПД 87%,</li>
+                            <li>базовый сертификат,</li>
+                            <li>вентилятор 1х120 мм, 12V</li>
+                            <li>52.5 A</li>
+                        </ul>
+                    </div>
+                    <div class="card_cost">154 BYN</div>
+                </div>
+                <div class="card">
+                    <div class="card_image_2"></div>
+                    <div class="card_title">Intel Core i5-12400</div>
+                    <div class="card_subtitle">
+                        <ul>
+                            <li>активная PFC, золотой</li>
+                            <li>сертификат, вентилятор</li>
+                            <li>1х140 мм, модульные кабели</li>
+                            <li>12V 62.5 А</li>
+                        </ul>
+                    </div>
+                    <div class="card_cost">226 BYN</div>
+                </div>
+                <div class="card">
+                    <div class="card_image_3"></div>
+                    <div class="card_title">Intel Core i7-9700F</div>
+                    <div class="card_subtitle">
+                        <ul>
+                            <li>активная PFC, золотой</li>
+                            <li>сертификат, вентилятор</li>
+                            <li>1х130 мм, модульные</li>
+                            <li>кабели 12V 54.1 А</li>
+                        </ul>
+                    </div>
+                    <div class="card_cost">241 BYN</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logo_footer">desPCription</div>
+        <div class="seti">
+            <div class="text_network">Ищите нас в соцсетях:</div>
+            <a href="https://e.mail.ru/inbox/?app_id_mytracker=undefined&authid=l3bwmdfa.tlc&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1"
+                class="mail"></a>
+            <a href="https://vk.com/public213309363" class="vk"></a>
+            <a href="https://instagram.com/despcription?igshid=YmMyMTA2M2Y=" class="insta"></a>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script/swiper.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/zoom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Материнская плата</title>
+    <link rel="shortcut icon" href="./img/logooo.png" type="image/png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section class="top-nav">
+            <a class="logo_header" href="../index.html"></a>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li class="main_page"><a href="../index.html">Главная страница</a></li>
+                <li class="inner" onmouseenter="openInnerSubMenu()"><a href="../Внутренняя арх/index.html">Внутренняя
+                        архитектура</a>
+                </li>
+                <li class="outer" onmouseenter="openOuterSubMenu()"><a href="../Внешняя арх/index.html">Внешняя
+                        архитектура</a>
+                </li>
+                <li class="games" onmouseenter="openGamesSubMenu()"><a href="../Переход на игры/index.html">Игры</a>
+                </li>
+            </ul>
+        </section>
+        <ul class="submenu submenu1" id="sm1" onmouseleave="closeInnerSubMenu()">
+            <li><a href="../Оперативная память/index.html">Оперативная память</a></li>
+            <li><a href="#">Материнская плата</a></li>
+            <li><a href="../Видеокарта/index.html">Видеокарта</a></li>
+            <li><a href="../Процессор/index.html">Процессор</a></li>
+            <li><a href="../Жесткий диск/index.html">Винчестер</a></li>
+            <li><a href="../Блок питания/index.html">Блок питания</a></li>
+        </ul>
+        <ul class="submenu submenu2" id="sm2" onmouseleave="closeGamesSubMenu()">
+            <li><a href="../Игра о внутренней/index.html">Игра о внутренней архитектуре</a></li>
+            <li><a href="../Игра о внешней/index.html">Игра о внешней архитектуре</a></li>
+        </ul>
+        <ul class="submenu submenu3" id="sm3" onmouseleave="closeOuterSubMenu()">
+            <li><a href="../Монитор/index.html">Монитор</a></li>
+            <li><a href="../Клавиатура/index.html">Клавиатура</a></li>
+            <li><a href="../Мышь/index.html">Мышь</a></li>
+            <li><a href="../Системный блок/index.html">Системный блок</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="block1">
+            <div class="slaider">
+                <div class="slaider_text">Материнская плата</div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/1 (2).png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/3.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/4.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/5.jpg" />
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+            </div>
+
+            <div class="buttons">
+                <div class="button_1">
+                    <div class="button1_image" onmouseenter="openButton1()" onmouseleave="closeButton1()"></div>
+                    <div class="button_1_text"><span class="text123">Транспортировка сигналов управления от центрального
+                            процессора к различным узлам</span></div>
+                </div>
+                <div class="button_2">
+                    <div class="button2_image" onmouseenter="openButton2()" onmouseleave="closeButton2()"></div>
+                    <div class="button_2_text"><span class="text456">Информационный обмен между процессором и
+                            памятью</span></div>
+                </div>
+                <div class="button_3">
+                    <div class="button3_image" onmouseenter="openButton3()" onmouseleave="closeButton3()"></div>
+                    <div class="button_3_text"><span class="text789">Взаимодействие с внешними устройствами</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="block2">
+            <div class="block_2_image"></div>
+            <div class="block_2_text">Эта самая большая плата в компьютере, которая является связующим звеном между
+                всеми остальными компонентами. К материнской плате подключаются все остальные устройства, включая
+                периферийные. Производителей материнских плат множество, а на верхушке держатся ASUS и Gigabyte, как
+                самые надёжные и одновременно дорогие, соответственно. Основными характеристиками являются: тип
+                поддерживаемого процессора (сокет), тип поддерживаемой оперативной памяти (DDR2, DDR3, DDR4), форм
+                фактор (определяет в какой корпус вы сможете поместить данную плату), а также – типы разъёмов для
+                подключения остальных компонентов компьютера.</div>.
+        </div>
+        <div class="block3">
+            <div class="block3_text">Топ в отношении цена/производительность</div>
+            <div class="block3_cards">
+                <div class="card">
+                    <div class="card_image_1"></div>
+                    <div class="card_title">Gigabyte B450 Aorus Pro</div>
+                    <div class="card_subtitle">
+                        <ul>
+                            <li>ATX</li>
+                            <li>Сокет AMD AM4</li>
+                            <li>Чипсет AMD B450</li>
+                            <li>Память 4xDDR4</li>
+                            <li>Слоты: 3xPCIe x16, 1xPCIe x1, 2xM.2</li>
+                        </ul>
+                    </div>
+                    <div class="card_cost">279 BYN</div>
+                </div>
+                <div class="card">
+                    <div class="card_image_2"></div>
+                    <div class="card_title">ASUS TUF Gaming B450-PLUS II</div>
+                    <div class="card_subtitle">
+                        <ul>
+                            <li>ATX</li>
+                            <li>Сокет AMD AM4</li>
+                            <li>Чипсет AMD B450</li>
+                            <li>Память 4xDDR4</li>
+                            <li>Слоты: 2xPCIe x16, 3xPCIe x1, 2xM.2</li>
+                        </ul>
+                    </div>
+                    <div class="card_cost">351 BYN</div>
+                </div>
+                <div class="card">
+                    <div class="card_image_3"></div>
+                    <div class="card_title">ASRock B550 Pro4</div>
+                    <div class="card_subtitle">
+                        <ul>
+                            <li>ATX</li>
+                            <li>Сокет AMD AM4</li>
+                            <li>Чипсет AMD B550</li>
+                            <li>Память 4xDDR4</li>
+                            <li>Слоты: 2xPCIe x16, 2xM.2</li>
+                        </ul>
+                    </div>
+                    <div class="card_cost">405 BYN</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logo_footer">desPCription</div>
+        <div class="seti">
+            <div class="text_network">Ищите нас в соцсетях:</div>
+            <a href="https://e.mail.ru/inbox/?app_id_mytracker=undefined&authid=l3bwmdfa.tlc&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1"
+                class="mail"></a>
+            <a href="https://vk.com/public213309363" class="vk"></a>
+            <a href="https://instagram.com/despcription?igshid=YmMyMTA2M2Y=" class="insta"></a>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script/swiper.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/zoom.js"></script>
+</body>
+
+</html>

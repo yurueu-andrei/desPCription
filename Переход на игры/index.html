@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Об играх</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="img/image_for_site.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <header>
+        <section class="top-nav">
+            <a class="logo_header" href="../index.html"></a>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li class="main_page"><a href="../index.html">Главная страница</a></li>
+                <li class="inner" onmouseenter="openInnerSubMenu()"><a href="../Внутренняя арх/index.html">Внутренняя
+                        архитектура</a>
+                </li>
+                <li class="outer" onmouseenter="openOuterSubMenu()"><a href="../Внешняя арх/index.html">Внешняя
+                        архитектура</a>
+                </li>
+                <li class="games" onmouseenter="openGamesSubMenu()"><a href="#">Игры</a>
+                </li>
+            </ul>
+        </section>
+        <ul class="submenu submenu1" id="sm1" onmouseleave="closeInnerSubMenu()">
+            <li><a href="../Оперативная память/index.html">Оперативная память</a></li>
+            <li><a href="../Материнская плата/index.html">Материнская плата</a></li>
+            <li><a href="../Видеокарта/index.html">Видеокарта</a></li>
+            <li><a href="../Процессор/index.html">Процессор</a></li>
+            <li><a href="../Жесткий диск/index.html">Винчестер</a></li>
+            <li><a href="../Блок питания/index.html">Блок питания</a></li>
+        </ul>
+        <ul class="submenu submenu2" id="sm2" onmouseleave="closeGamesSubMenu()">
+            <li><a href="../Игра о внутренней/index.html">Игра о внутренней архитектуре</a></li>
+            <li><a href="../Игра о внешней/index.html">Игра о внешней архитектуре</a></li>
+        </ul>
+        <ul class="submenu submenu3" id="sm3" onmouseleave="closeOuterSubMenu()">
+            <li><a href="../Монитор/index.html">Монитор</a></li>
+            <li><a href="../Клавиатура/index.html">Клавиатура</a></li>
+            <li><a href="../Мышь/index.html">Мышь</a></li>
+            <li><a href="../Системный блок/index.html">Системный блок</a></li>
+        </ul>
+    </header>
+
+    <div class="block1">
+        <div class="block1_text">
+            Цифровые обучающие игры — это предмет исследования педагогики компьютерной игры, которая в свою очередь
+            является частью медиапедагогики. Видеоигры могут быть также очень полезны в том смысле, что они создают
+            эффект симуляции действия, но при этом не несут какой-либо очевидной опасности. Например, когда американские
+            воздушные войска учат своих пилотов летать на самолёте, стоящем миллионы долларов, естественно, они не
+            отправляют пилотов сразу же на взлётную полосу. ВВС используют симулятор вождения самолёта, чтобы
+            подготовить пилотов к управлению настоящей машиной. Предлагаем Вам сыграть в наши игры о внешней и
+            внутренней архитектуре компьютера.
+        </div>
+    </div>
+
+    <div class="block2_container">
+        <div class="block2">
+            <div class="block2_title">Польза компьютерных игр для развития человека</div>
+            <div class="block2_stars">
+                <div class="star">
+                    <div class="star_image"><img src="img/star1.png" alt=""></div>
+                    <div class="star_title">Способность к обучению</div>
+                    <div class="star_subtitle">Игры развивают способность к обучению. Например, в стратегиях и
+                        головоломках не справиться без логического мышления, внимательности и хорошей памяти</div>
+                </div>
+                <div class="star">
+                    <div class="star_image"><img src="img/star2.png" alt=""></div>
+                    <div class="star_title">Навыки обшения</div>
+                    <div class="star_subtitle">Игры развивают навыки общения. В процессе игры мы учимся
+                        взаимодействовать с разными людьми, договариваться или отстаивать свою позицию</div>
+                </div>
+                <div class="star">
+                    <div class="star_image"><img src="img/star3.png" alt=""></div>
+                    <div class="star_title">Творческий подход</div>
+                    <div class="star_subtitle">Игры развивают творческий подход. Многие из них связаны с созданием
+                        внутреигровых объектов, которое требует креативного мышления</div>
+                </div>
+            </div>
+            <div class="block2_choise">
+                <div class="outer_game">
+                    <div class="choise_image"><img src="img/Картинка для внешней.jpg" alt=""></div>
+                    <div class="choise_title">Внешняя</div>
+                    <div class="choise_subtitle">Создайте из различных компонентов визуальную часть своего ПК. В этой
+                        игре Вы сможете подобрать мышку, клавиатуру, наушники и корпус. Создайте своё идеальное
+                        сочетание компонентов внешней архитектуры.
+                    </div>
+                    <a href="../Игра о внешней/index.html" class="choise_button">
+                        <div class="button_text">Играть</div>
+                        <div class="button_imge"><img src="img/Arrow.png" alt=""></div>
+                    </a>
+                </div>
+                <div class="inner_game">
+                    <div class="choise_image"><img src="img/Картинка для внутренней.jpg" alt=""></div>
+                    <div class="choise_title">Внутренняя</div>
+                    <div class="choise_subtitle">Как мы все знаем, мощность компьюетра зависит от компонентов внутренней
+                        архитектуры. В этой игре Вы сможете поместить компоненты в корпус. Будьте внимательны и сможете
+                        собрать такой же в реальной жизни.</div>
+                    <a href="../Игра о внутренней/index.html" class="choise_button">
+                        <div class="button_text">Играть</div>
+                        <div class="button_imge"><img src="img/Arrow.png" alt=""></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="logo_footer">desPCription</div>
+        <div class="seti">
+            <div class="text_network">Ищите нас в соцсетях:</div>
+            <a href="https://e.mail.ru/inbox/?app_id_mytracker=undefined&authid=l3bwmdfa.tlc&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1"
+                class="mail"></a>
+            <a href="https://vk.com/public213309363" class="vk"></a>
+            <a href="https://instagram.com/despcription?igshid=YmMyMTA2M2Y=" class="insta"></a>
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="./img/logot.png">
+    <title>Игра</title>
+</head>
+
+<body>
+    <header>
+        <section class="top-nav">
+            <a class="logo_header" href="../index.html"></a>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li class="main_page"><a href="../index.html">Главная страница</a></li>
+                <li class="inner" onmouseenter="openInnerSubMenu()"><a href="../Внутренняя арх/index.html">Внутренняя
+                        архитектура</a>
+                </li>
+                <li class="outer" onmouseenter="openOuterSubMenu()"><a href="../Внешняя арх/index.html">Внешняя
+                        архитектура</a>
+                </li>
+                <li class="games" onmouseenter="openGamesSubMenu()"><a href="../Переход на игры/index.html">Игры</a>
+                </li>
+            </ul>
+        </section>
+        <ul class="submenu submenu1" id="sm1" onmouseleave="closeInnerSubMenu()">
+            <li><a href="../Оперативная память/index.html">Оперативная память</a></li>
+            <li><a href="../Материнская плата/index.html">Материнская плата</a></li>
+            <li><a href="../Видеокарта/index.html">Видеокарта</a></li>
+            <li><a href="../Процессор/index.html">Процессор</a></li>
+            <li><a href="../Жесткий диск/index.html">Винчестер</a></li>
+            <li><a href="../Блок питания/index.html">Блок питания</a></li>
+        </ul>
+        <ul class="submenu submenu2" id="sm2" onmouseleave="closeGamesSubMenu()">
+            <li><a href="#">Игра о внутренней архитектуре</a></li>
+            <li><a href="../Игра о внешней/index.html">Игра о внешней архитектуре</a></li>
+        </ul>
+        <ul class="submenu submenu3" id="sm3" onmouseleave="closeOuterSubMenu()">
+            <li><a href="../Монитор/index.html">Монитор</a></li>
+            <li><a href="../Клавиатура/index.html">Клавиатура</a></li>
+            <li><a href="../Мышь/index.html">Мышь</a></li>
+            <li><a href="../Системный блок/index.html">Системный блок</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="block1">
+            <div class="text">
+                <div class="block1_title">
+                    Собери свой ПК!
+                </div>
+                <div class="block1_2_essence">
+                    <p class="block1_2_essence_2">Суть игры:</p>
+                    Перетащить элементы внутренней<br> архитектуры в корпус<br>
+                    (В некоторых случаях стоит учитывать<br> очерёдность)
+                </div>
+                <div class="block1_3_button">
+                    <div id="link" class="hint" onClick="hide_show();">
+                        Подсказка &#10095
+                    </div>
+                    <div id="div" class="hint1">Принципиально важно вставить в корпус первой материнскую плату, так как
+                        некоторые элементы крепятся именно к ней. В реальности она является соединительным звеном между
+                        всеми комплектующими.</div>
+                </div>
+                <a href="#" class="block1_result" onclick="checkResults()">
+                    <div class="img"></div>
+                    <div class="text_1">
+                        Просмотрите<br>результат
+                    </div>
+                </a>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="game" id="game_new">
+            <div class="block2">
+                <div class="example-origin" id="test">
+                    <div id="draggable-1" class="example-draggable" draggable="true" ondragstart="onDragStart(event);">
+                    </div>
+                    <div id="draggable-2" class="example-draggable" draggable="true" ondragstart="onDragStart(event);">
+                    </div>
+                    <div id="draggable-3" class="example-draggable" draggable="true" ondragstart="onDragStart(event);">
+                    </div>
+                    <div id="draggable-4" class="example-draggable" draggable="true" ondragstart="onDragStart(event);">
+                    </div>
+                    <div id="draggable-5" class="example-draggable" draggable="true" ondragstart="onDragStart(event);">
+                    </div>
+                    <div id="draggable-6" class="example-draggable" draggable="true" ondragstart="onDragStart(event);">
+                    </div>
+                </div>
+                <div class="success">
+                    <div class="success_image"></div>
+                    <div class="success_text">Все элементы добавлены верно</div>
+                </div>
+                <div class="failure">
+                    <div class="failure_image"></div>
+                    <div class="failure_text">Элементы добавлены неверно</div>
+                    <div class="button__1">
+                        <a href="index.html" class="button_new">
+                            <p class="again">Попробовать снова</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="line2"></div>
+            </div>
+            <div class="block3">
+                <div class="processor" id="procZone" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+                <div class="videocard" id="videoZone" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+                <div class="matplata" id="matZone" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+                <div class="operat" id="operZone" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+                <div class="disk_main" id="diskZone" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+                <div class="power" id="powerZone" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logo_footer">desPCription</div>
+        <div class="seti">
+            <div class="text_network">Ищите нас в соцсетях:</div>
+            <a href="https://e.mail.ru/inbox/?app_id_mytracker=undefined&authid=l3bwmdfa.tlc&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1"
+                class="mail"></a>
+            <a href="https://vk.com/public213309363" class="vk"></a>
+            <a href="https://instagram.com/despcription?igshid=YmMyMTA2M2Y=" class="insta"></a>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+    <script src="script/zoom.js"></script>
+    <script src="script/button.js"></script>
+    <script src="script/game.js"></script>
+</body>
+
+</html>

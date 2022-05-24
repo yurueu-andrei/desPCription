@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Жесткий Диск</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="./img/logooo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section class="top-nav">
+            <a class="logo_header" href="../index.html"></a>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li class="main_page"><a href="../index.html">Главная страница</a></li>
+                <li class="inner" onmouseenter="openInnerSubMenu()"><a href="../Внутренняя арх/index.html">Внутренняя
+                        архитектура</a>
+                </li>
+                <li class="outer" onmouseenter="openOuterSubMenu()"><a href="../Внешняя арх/index.html">Внешняя
+                        архитектура</a>
+                </li>
+                <li class="games" onmouseenter="openGamesSubMenu()"><a href="../Переход на игры/index.html">Игры</a>
+                </li>
+            </ul>
+        </section>
+        <ul class="submenu submenu1" id="sm1" onmouseleave="closeInnerSubMenu()">
+            <li><a href="../Оперативная память/index.html">Оперативная память</a></li>
+            <li><a href="../Материнская плата/index.html">Материнская плата</a></li>
+            <li><a href="../Видеокарта/index.html">Видеокарта</a></li>
+            <li><a href="../Процессор/index.html">Процессор</a></li>
+            <li><a href="#">Винчестер</a></li>
+            <li><a href="../Блок питания/index.html">Блок питания</a></li>
+        </ul>
+        <ul class="submenu submenu2" id="sm2" onmouseleave="closeGamesSubMenu()">
+            <li><a href="../Игра о внутренней/index.html">Игра о внутренней архитектуре</a></li>
+            <li><a href="../Игра о внешней/index.html">Игра о внешней архитектуре</a></li>
+        </ul>
+        <ul class="submenu submenu3" id="sm3" onmouseleave="closeOuterSubMenu()">
+            <li><a href="../Монитор/index.html">Монитор</a></li>
+            <li><a href="../Клавиатура/index.html">Клавиатура</a></li>
+            <li><a href="../Мышь/index.html">Мышь</a></li>
+            <li><a href="../Системный блок/index.html">Системный блок</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="block1">
+            <div class="slaider">
+                <div class="slaider_text">Жесткий Диск</div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/1.jpg" />
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="img/2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/3.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/4.jpg" />
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="img/5.jpg" />
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <div class="button_1">
+                    <div class="button1_image" onmouseenter="openButton1()" onmouseleave="closeButton1()"></div>
+                    <div class="button_1_text"><span class="text123">Временное хранение данных и команд, необходимых
+                            процессору </span></div>
+                </div>
+                <div class="button_2">
+                    <div class="button2_image" onmouseenter="openButton2()" onmouseleave="closeButton2()"></div>
+                    <div class="button_2_text"><span class="text456">Существует как внутренний, так и внешний жёсткие
+                            диски</span></div>
+                </div>
+                <div class="button_3">
+                    <div class="button3_image" onmouseenter="openButton3()" onmouseleave="closeButton3()"></div>
+                    <div class="button_3_text"><span class="text789">Емкость и скорость работы жестких дисков различны
+                        </span></div>
+                </div>
+            </div>
+        </div>
+        <div class="block2">
+            <div class="block_2_image"></div>
+            <div class="block_2_text">
+                Вот это как раз-таки та память, на которой у вас постоянно хранятся все ваши файлы, куда устанавливаются
+                программы, игры, скачиваются фильмы, музыка и все прочее. Это вид памяти не очищается после перезагрузки
+                или выключения компьютера, как в случае с оперативной памятью, т.е. явлется энергонезависимой. <br><br>
+                Бывают диски HDD и SSD. Последние начали массово использоваться не так-то и давно и постепенно вытесняют
+                HDD за счет своих неоспоримых преимуществ, главное из которых - скорость записи\считывания данных. У SSD
+                она в 10-ки раз превышает скорость HDD. Помимо этого, SSD диски намного прочнее (поскольку в них
+                отсутствуют движущиеся механизмы, как в HDD), потребляют меньше энергии (HDD около 6 Вт, а SSD меньше 2
+                Вт), бесшумны, намного легче по весу, меньше нагреваются.
+            </div>
+        </div>>
+        <div class="block3">
+            <div class="block3_text">Топ в отношении цена/производительность</div>
+            <div class="block3_cards">
+                <div class="card">
+                    <div class="card_image_1"></div>
+                    <div class="card_title">Selate Barracuda</div>
+                    <div class="card_subtitle">
+                        <ul>
+                            <li>2 TB, ST2000DM008</li>
+                            <li>3.5"</li>
+                            <li>SATA 3.0 (6Gbps)</li>
+                            <li>7200 об/мин, буфер 256 МБ</li>
+                        </ul>
+                    </div>
+                    <div class="card_cost">220 BYN</div>
+                </div>
+                <div class="card">
+                    <div class="card_image_2"></div>
+                    <div class="card_title">WD Blue</div>
+                    <div class="card_subtitle">
+                        <ul>
+                            <li>2 TB, WD20EZBX</li>
+                            <li>3.5"</li>
+                            <li>SATA 3.0 (6Gbps)</li>
+                            <li>7200 об/мин, буфер 256 МБ</li>
+                        </ul>
+                    </div>
+                    <div class="card_cost">237 BYN</div>
+                </div>
+                <div class="card">
+                    <div class="card_image_3"></div>
+                    <div class="card_title">Toshiba L200</div>
+                    <div class="card_subtitle">
+                        <ul>
+                            <li>2 TB, HDWL120UZSVA</li>
+                            <li>2.5"</li>
+                            <li>SATA 3.0 (6Gbps)</li>
+                            <li>5400 об/мин, буфер 128 МБ</li>
+                        </ul>
+                    </div>
+                    <div class="card_cost">280 BYN</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logo_footer">desPCription</div>
+        <div class="seti">
+            <div class="text_network">Ищите нас в соцсетях:</div>
+            <a href="https://e.mail.ru/inbox/?app_id_mytracker=undefined&authid=l3bwmdfa.tlc&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1"
+                class="mail"></a>
+            <a href="https://vk.com/public213309363" class="vk"></a>
+            <a href="https://instagram.com/despcription?igshid=YmMyMTA2M2Y=" class="insta"></a>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script/swiper.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/zoom.js"></script>
+</body>
+
+</html>
